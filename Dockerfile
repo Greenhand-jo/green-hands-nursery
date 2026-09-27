@@ -5,6 +5,5 @@ COPY package.json server.mjs ./
 COPY lib/ ./lib/
 COPY dist/ ./dist/
 RUN mkdir -p /data
-VOLUME /data
 EXPOSE 3000
 CMD ["node","server.mjs"]
